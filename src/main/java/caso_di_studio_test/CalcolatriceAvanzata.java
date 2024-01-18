@@ -5,15 +5,15 @@ import java.util.List;
 
 public class CalcolatriceAvanzata {
 
-    public double somma(double a, double b) {
+    public static double somma(double a, double b) {
         return a + b;
     }
 
-    public double sottrai(double a, double b) {
+    public static double sottrai(double a, double b) {
         return a - b;
     }
 
-    public double moltiplica(double a, double b) {
+    public static double moltiplica(double a, double b) {
         return a * b;
     }
 
@@ -33,11 +33,22 @@ public class CalcolatriceAvanzata {
     }
 
     public static double elevaPotenza(double base, double esponente) {
+        //parte nuova codice
+        if ((base==0 && esponente<=0)||(base<0 && (esponente != (int) esponente))){
+            throw new IllegalArgumentException("Impossibile calcolare la potenza");
+        }
         return Math.pow(base, esponente);
     }
 
     public static List<Double> calcolaRadiciEquazioneQuadratica(double a, double b, double c) {
         List<Double> radici = new ArrayList<>();
+
+        if (a==0 && b==0 && c==0)
+            throw new IllegalArgumentException("Non è un'equazione");
+
+        if (a==0)
+            throw new IllegalArgumentException("Non è un'equazione di secondo grado");
+
         double discriminante = b * b - 4 * a * c;
 
         if (discriminante > 0) {
