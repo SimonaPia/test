@@ -4,15 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="82a7d635-7e17-4d2e-9390-cc91e92a9dcb" name="Changes" comment="Prima commit">
-      <change afterPath="$PROJECT_DIR$/.jqwik-database" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/homework2/CalcolatriceAvanzataPropertyTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+    <list default="true" id="82a7d635-7e17-4d2e-9390-cc91e92a9dcb" name="Changes" comment="Property based test">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/caso_di_studio_test/CalcolatriceAvanzata.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/caso_di_studio_test/CalcolatriceAvanzata.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/homework1/CalcolatriceAvanzataTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/homework1/CalcolatriceAvanzataTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/homework2/CalcolatriceAvanzataPropertyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/homework2/CalcolatriceAvanzataPropertyTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,32 +54,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Gradle.CalcolatriceAvanzataPropertyTest.executor": "Run",
-    "Gradle.CalcolatriceAvanzataPropertyTest.testElevaPotenzaBaseZero.executor": "Run",
-    "Gradle.CalcolatriceAvanzataPropertyTest.testElevaPotenzaDecimale.executor": "Run",
-    "Gradle.CalcolatriceAvanzataPropertyTest.testElevaPotenzaEsponenteMinore.executor": "Run",
-    "Gradle.CalcolatriceAvanzataPropertyTest.testElevaPotenzaIntero.executor": "Run",
-    "Gradle.CalcolatriceAvanzataTest.executor": "Run",
-    "Gradle.CalcolatriceAvanzataTest.testElevaPotenzaWithException.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Gradle.CalcolatriceAvanzataPropertyTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CalcolatriceAvanzataPropertyTest.testElevaPotenzaBaseZero.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CalcolatriceAvanzataPropertyTest.testElevaPotenzaDecimale.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CalcolatriceAvanzataPropertyTest.testElevaPotenzaEsponenteMinore.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CalcolatriceAvanzataPropertyTest.testElevaPotenzaIntero.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CalcolatriceAvanzataTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CalcolatriceAvanzataTest.testElevaPotenzaWithException.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="homework1" />
@@ -242,7 +236,8 @@
       <workItem from="1705593897556" duration="129000" />
       <workItem from="1705594219717" duration="91000" />
       <workItem from="1705594322341" duration="883000" />
-      <workItem from="1705595222788" duration="7728000" />
+      <workItem from="1705595222788" duration="7781000" />
+      <workItem from="1705654904289" duration="3296000" />
     </task>
     <task id="LOCAL-00001" summary="Prima commit">
       <option name="closed" value="true" />
@@ -252,7 +247,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705566596285</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Property based test">
+      <option name="closed" value="true" />
+      <created>1705603013141</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1705603013141</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -261,7 +264,8 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Prima commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Prima commit" />
+    <MESSAGE value="Property based test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Property based test" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/calcolatrice_avanzata$CalcolatriceAvanzataTest.ic" NAME="CalcolatriceAvanzataTest Coverage Results" MODIFIED="1705595041814" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
