@@ -56,7 +56,7 @@ public class CalcolatriceAvanzataPropertyTestStatistiche {
     @Property
     @Report(Reporting.GENERATED)
     @StatisticsReport (format = Histogram.class)
-    void testRadiceQuadrata(@ForAll("numeriMaggioriOUgualiAZero") double a){
+    void testRadiceQuadrata(@ForAll double a){
 
     }
 
