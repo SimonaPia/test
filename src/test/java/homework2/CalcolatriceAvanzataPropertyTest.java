@@ -3,9 +3,6 @@ package homework2;
 import caso_di_studio_test.CalcolatriceAvanzata;
 import net.jqwik.api.*;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
@@ -102,37 +99,5 @@ public class CalcolatriceAvanzataPropertyTest {
     @Provide
     Arbitrary<Double> numeroMinoreOUgualeAZero() {
         return Arbitraries.doubles().lessOrEqual(0);
-    }
-    @Property
-    @Report(Reporting.GENERATED)
-    void testCalcolaRadiciEquazioneQuadratica(@ForAll("numeriDiversiDaZero") double a, @ForAll double b, @ForAll double c) {
-        List<Double> radici = new ArrayList<>();
-        double discriminante = b * b - 4 * a * c;
-
-        if (discriminante > 0) {
-            double radice1 = (-b + Math.sqrt(discriminante)) / (2 * a);
-            double radice2 = (-b - Math.sqrt(discriminante)) / (2 * a);
-            radici.add(radice1);
-            radici.add(radice2);
-        } else if (discriminante == 0) {
-            double radiceUnica = -b / (2 * a);
-            radici.add(radiceUnica);
-        }
-
-        assertEquals(radici, CalcolatriceAvanzata.calcolaRadiciEquazioneQuadratica(a, b, c));
-    }
-    @Property
-    @Report(Reporting.GENERATED)
-    void testCalcolaRadiciEquazioneQuadraticaAUgualeZero(@ForAll("numeriUgualiAZero") double a, @ForAll double b, @ForAll double c) {
-        assertThrows(IllegalArgumentException.class, ()->{
-           CalcolatriceAvanzata.calcolaRadiciEquazioneQuadratica(a, b, c);
-        });
-    }
-    @Property
-    @Report(Reporting.GENERATED)
-    void testCalcolaRadiciEquazioneQuadraticaTuttiUgualeZero(@ForAll("numeriUgualiAZero") double a, @ForAll("numeriUgualiAZero") double b, @ForAll("numeriUgualiAZero") double c) {
-        assertThrows(IllegalArgumentException.class, ()->{
-            CalcolatriceAvanzata.calcolaRadiciEquazioneQuadratica(a, b, c);
-        });
     }
 }

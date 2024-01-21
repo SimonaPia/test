@@ -105,6 +105,7 @@ public class CalcolatriceAvanzataTest {
         );
     }
 
+
     public static Stream<Arguments> generatorSottrai() {
         return Stream.of(
                 of(8, -5, 13), //T1
