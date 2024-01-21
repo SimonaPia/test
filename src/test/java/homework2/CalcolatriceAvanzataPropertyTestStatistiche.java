@@ -53,6 +53,12 @@ public class CalcolatriceAvanzataPropertyTestStatistiche {
             Statistics.collect("denominatoreUgualeAZero", 1);
         }
     }
+    @Property
+    @Report(Reporting.GENERATED)
+    @StatisticsReport (format = Histogram.class)
+    void testRadiceQuadrata(@ForAll("numeriMaggioriOUgualiAZero") double a){
+
+    }
 
 
 }
