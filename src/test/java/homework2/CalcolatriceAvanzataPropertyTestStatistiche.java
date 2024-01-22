@@ -121,10 +121,8 @@ public class CalcolatriceAvanzataPropertyTestStatistiche {
     void testElevaPotenzaIntero(@ForAll("numeriMinoriDiZero") double base, @ForAll("esponenteIntero") double esponente) {
         // Raccogli la statistica sull'esponente
         String tipoEsponente = (esponente < 0) ? "negativo" : (esponente > 0) ? "positivo" : "zero";
-        Statistics.collect("tipoEsponente", tipoEsponente);
-
         long mod = Math.floorMod((long) esponente, 2);
-        Statistics.collect(mod == 0 ? "pari" : "dispari");
+        Statistics.collect("tipoEsponente", tipoEsponente, mod == 0 ? "pari" : "dispari");
     }
     @Provide
     Arbitrary<Double> esponenteIntero() {
@@ -176,8 +174,7 @@ public class CalcolatriceAvanzataPropertyTestStatistiche {
         }
 
         // Raccogli la statistica in base a se l'eccezione è stata lanciata o meno
-        Statistics.collect("fallimenti", isExceptionThrown);
-        Statistics.collect("successi", !isExceptionThrown);
+        Statistics.collect("successi", isExceptionThrown);
     }
     @Provide
     Arbitrary<Double> numeroMinoreOUgualeAZero() {
