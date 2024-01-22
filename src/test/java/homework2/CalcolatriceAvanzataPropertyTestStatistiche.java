@@ -63,7 +63,6 @@ public class CalcolatriceAvanzataPropertyTestStatistiche {
         }
 
         // Raccogli la statistica in base a se l'eccezione è stata lanciata o meno
-        Statistics.collect("fallimenti", isExceptionThrown);
         Statistics.collect("successi", !isExceptionThrown);
     }
 
@@ -94,8 +93,7 @@ public class CalcolatriceAvanzataPropertyTestStatistiche {
         }
 
         // Raccogli la statistica in base a se l'eccezione è stata lanciata o meno
-        Statistics.collect("fallimenti", isExceptionThrown);
-        Statistics.collect("successi", !isExceptionThrown);
+        Statistics.collect("successi", isExceptionThrown);
     }
     @Provide
     Arbitrary<Double> numeriMinoriDiZero() {
@@ -142,7 +140,7 @@ public class CalcolatriceAvanzataPropertyTestStatistiche {
         }
         boolean isEsponenteIntero = esponente == Math.floor(esponente);
 
-        // Raccogli le statistiche in base al tipo di esponente e al successo/fallimento
+        // Raccogli le statistiche in base al tipo di esponente e al successo
         Statistics.collect("tipoEsponente", isEsponenteIntero);
         Statistics.collect("successo", successo);
 
