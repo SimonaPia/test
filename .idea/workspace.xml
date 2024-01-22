@@ -4,41 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="82a7d635-7e17-4d2e-9390-cc91e92a9dcb" name="Changes" comment="Inserimento CalcolatriceAvanzataOriginale sulla quale fare i test e inserimento della classe per i test di prova da inserire nel punto 2 dei sette step.">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/htmlReport/css/coverage.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/htmlReport/css/idea.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/htmlReport/img/arrowDown.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/htmlReport/img/arrowUp.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/htmlReport/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/htmlReport/index_SORT_BY_BLOCK.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/htmlReport/index_SORT_BY_BLOCK_DESC.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/htmlReport/index_SORT_BY_CLASS.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/htmlReport/index_SORT_BY_CLASS_DESC.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/htmlReport/index_SORT_BY_LINE.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/htmlReport/index_SORT_BY_LINE_DESC.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/htmlReport/index_SORT_BY_METHOD.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/htmlReport/index_SORT_BY_METHOD_DESC.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/htmlReport/index_SORT_BY_NAME_DESC.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/htmlReport/js/highlight.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/htmlReport/js/highlightjs-line-numbers.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/htmlReport/ns-1/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/htmlReport/ns-1/index_SORT_BY_BLOCK.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/htmlReport/ns-1/index_SORT_BY_BLOCK_DESC.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/htmlReport/ns-1/index_SORT_BY_CLASS.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/htmlReport/ns-1/index_SORT_BY_CLASS_DESC.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/htmlReport/ns-1/index_SORT_BY_LINE.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/htmlReport/ns-1/index_SORT_BY_LINE_DESC.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/htmlReport/ns-1/index_SORT_BY_METHOD.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/htmlReport/ns-1/index_SORT_BY_METHOD_DESC.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/htmlReport/ns-1/index_SORT_BY_NAME_DESC.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/htmlReport/ns-1/sources/source-1.html" afterDir="false" />
+    <list default="true" id="82a7d635-7e17-4d2e-9390-cc91e92a9dcb" name="Changes" comment="Ho modificato alcune cose delle statistiche e ho aggiunto i test per la code coverage">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/caso_di_studio_test/CalcolatriceAvanzataOriginale.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/codice_originale/CalcolatriceAvanzataOriginale.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/homework1/CalcolatriceAvanzataTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/homework1/CalcolatriceAvanzataTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/homework1/CalcolatriceAvanzataTestCodiceOriginale.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/homework1/CalcolatriceAvanzataTestCodiceOriginale.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/homework1/CalcolatriceAvanzataTestDiProva.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/homework1/CalcolatriceAvanzataTestDiProva.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/homework2/CalcolatriceAvanzataPropertyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/homework2/CalcolatriceAvanzataPropertyTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/codice_originale/CalcolatriceAvanzataOriginale.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/homework1/CalcolatriceAvanzataTestCodiceOriginale.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/homework1/CalcolatriceAvanzataTestDiProva.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/homework2/CalcolatriceAvanzataPropertyTestStatistiche.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/homework2/CalcolatriceAvanzataPropertyTestStatistiche.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -90,64 +60,81 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Gradle.Build calcolatrice_avanzata.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.CalcolatriceAvanzataPropertyTest.executor&quot;: &quot;Coverage&quot;,
-    &quot;Gradle.CalcolatriceAvanzataPropertyTest.testElevaPotenzaBaseZero.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.CalcolatriceAvanzataPropertyTest.testElevaPotenzaDecimale.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.CalcolatriceAvanzataPropertyTest.testElevaPotenzaEsponenteMinore.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.CalcolatriceAvanzataPropertyTest.testElevaPotenzaIntero.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.CalcolatriceAvanzataPropertyTestStatistiche.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.CalcolatriceAvanzataPropertyTestStatistiche.testDividiDenominatoreDiversoDaZero.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.CalcolatriceAvanzataPropertyTestStatistiche.testDividiDenominatoreUgualeAZero.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.CalcolatriceAvanzataPropertyTestStatistiche.testSomma.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.CalcolatriceAvanzataTest.executor&quot;: &quot;Coverage&quot;,
-    &quot;Gradle.CalcolatriceAvanzataTest.testElevaPotenzaWithException.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.CalcolatriceAvanzataTestCodiceOriginale.testCalcolaRadiciEquazioneQuadratica.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.CalcolatriceAvanzataTestCodiceOriginale.testCalcolaRadiciEquazioneQuadraticaWithException.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.CalcolatriceAvanzataTestCodiceOriginale.testDividi.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.CalcolatriceAvanzataTestCodiceOriginale.testDividiWithException.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.CalcolatriceAvanzataTestCodiceOriginale.testElevaPotenza.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.CalcolatriceAvanzataTestCodiceOriginale.testElevaPotenzaWithException.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.CalcolatriceAvanzataTestCodiceOriginale.testRadiceQuadrata.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.CalcolatriceAvanzataTestCodiceOriginale.testRadiceQuadrataWithException.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.CalcolatriceAvanzataTestDiProva.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.CalcolatriceAvanzataTestDiProva.testCalcoloRadiciEquazioneQuadratica1.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.CalcolatriceAvanzataTestDiProva.testCalcoloRadiciEquazioneQuadratica2.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.CalcolatriceAvanzataTestDiProva.testCalcoloRadiciEquazioneQuadratica4.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.CalcolatriceAvanzataTestDiProva.testDividi3.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.CalcolatriceAvanzataTestDiProva.testElevaPotenza1.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.CalcolatriceAvanzataTestDiProva.testElevaPotenza3.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.CalcolatriceAvanzataTestDiProva.testRadiceQaudrata2.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.CalcolatriceAvanzataTestDiProva.testRadiceQaudrata3.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;coverage&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Gradle.Build calcolatrice_avanzata.executor": "Run",
+    "Gradle.CalcolatriceAvanzataPropertyTest.executor": "Coverage",
+    "Gradle.CalcolatriceAvanzataPropertyTest.testElevaPotenzaBaseZero.executor": "Run",
+    "Gradle.CalcolatriceAvanzataPropertyTest.testElevaPotenzaDecimale.executor": "Run",
+    "Gradle.CalcolatriceAvanzataPropertyTest.testElevaPotenzaEsponenteMinore.executor": "Run",
+    "Gradle.CalcolatriceAvanzataPropertyTest.testElevaPotenzaIntero.executor": "Run",
+    "Gradle.CalcolatriceAvanzataPropertyTestStatistiche.executor": "Run",
+    "Gradle.CalcolatriceAvanzataPropertyTestStatistiche.testCalcolaRadiciEquazioneQuadratica.executor": "Run",
+    "Gradle.CalcolatriceAvanzataPropertyTestStatistiche.testCalcolaRadiciEquazioneQuadraticaAUgualeZero.executor": "Run",
+    "Gradle.CalcolatriceAvanzataPropertyTestStatistiche.testDividiDenominatoreDiversoDaZero.executor": "Run",
+    "Gradle.CalcolatriceAvanzataPropertyTestStatistiche.testDividiDenominatoreUgualeAZero.executor": "Run",
+    "Gradle.CalcolatriceAvanzataPropertyTestStatistiche.testElevaPotenzaDecimale.executor": "Run",
+    "Gradle.CalcolatriceAvanzataPropertyTestStatistiche.testElevaPotenzaEsponenteMinore.executor": "Run",
+    "Gradle.CalcolatriceAvanzataPropertyTestStatistiche.testElevaPotenzaIntero.executor": "Run",
+    "Gradle.CalcolatriceAvanzataPropertyTestStatistiche.testMoltiplica.executor": "Run",
+    "Gradle.CalcolatriceAvanzataPropertyTestStatistiche.testSomma.executor": "Run",
+    "Gradle.CalcolatriceAvanzataPropertyTestStatistiche.testSottrai.executor": "Run",
+    "Gradle.CalcolatriceAvanzataTest.executor": "Coverage",
+    "Gradle.CalcolatriceAvanzataTest.testElevaPotenzaWithException.executor": "Run",
+    "Gradle.CalcolatriceAvanzataTestCodiceOriginale.executor": "Run",
+    "Gradle.CalcolatriceAvanzataTestCodiceOriginale.testCalcolaRadiciEquazioneQuadratica.executor": "Run",
+    "Gradle.CalcolatriceAvanzataTestCodiceOriginale.testCalcolaRadiciEquazioneQuadraticaWithException.executor": "Run",
+    "Gradle.CalcolatriceAvanzataTestCodiceOriginale.testDividi.executor": "Run",
+    "Gradle.CalcolatriceAvanzataTestCodiceOriginale.testDividiWithException.executor": "Run",
+    "Gradle.CalcolatriceAvanzataTestCodiceOriginale.testElevaPotenza.executor": "Run",
+    "Gradle.CalcolatriceAvanzataTestCodiceOriginale.testElevaPotenzaWithException.executor": "Run",
+    "Gradle.CalcolatriceAvanzataTestCodiceOriginale.testRadiceQuadrata.executor": "Run",
+    "Gradle.CalcolatriceAvanzataTestCodiceOriginale.testRadiceQuadrataWithException.executor": "Run",
+    "Gradle.CalcolatriceAvanzataTestDiProva.executor": "Run",
+    "Gradle.CalcolatriceAvanzataTestDiProva.testCalcoloRadiciEquazioneQuadratica1.executor": "Run",
+    "Gradle.CalcolatriceAvanzataTestDiProva.testCalcoloRadiciEquazioneQuadratica2.executor": "Run",
+    "Gradle.CalcolatriceAvanzataTestDiProva.testCalcoloRadiciEquazioneQuadratica4.executor": "Run",
+    "Gradle.CalcolatriceAvanzataTestDiProva.testDividi3.executor": "Run",
+    "Gradle.CalcolatriceAvanzataTestDiProva.testElevaPotenza1.executor": "Run",
+    "Gradle.CalcolatriceAvanzataTestDiProva.testElevaPotenza3.executor": "Run",
+    "Gradle.CalcolatriceAvanzataTestDiProva.testMoltiplica1.executor": "Run",
+    "Gradle.CalcolatriceAvanzataTestDiProva.testMoltiplica2.executor": "Run",
+    "Gradle.CalcolatriceAvanzataTestDiProva.testMoltiplica3.executor": "Run",
+    "Gradle.CalcolatriceAvanzataTestDiProva.testRadiceQaudrata2.executor": "Run",
+    "Gradle.CalcolatriceAvanzataTestDiProva.testRadiceQaudrata3.executor": "Run",
+    "Gradle.CalcolatriceAvanzataTestDiProva.testSomma1.executor": "Run",
+    "Gradle.CalcolatriceAvanzataTestDiProva.testSomma2.executor": "Run",
+    "Gradle.CalcolatriceAvanzataTestDiProva.testSomma3.executor": "Run",
+    "Gradle.CalcolatriceAvanzataTestDiProva.testSottrai1.executor": "Run",
+    "Gradle.CalcolatriceAvanzataTestDiProva.testSottrai2.executor": "Run",
+    "Gradle.CalcolatriceAvanzataTestDiProva.testSottrai3.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "coverage",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="homework1" />
       <recent name="caso_di_studio_test" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.CalcolatriceAvanzataPropertyTestStatistiche">
-    <configuration name="CalcolatriceAvanzataPropertyTestStatistiche" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.CalcolatriceAvanzataTest">
+    <configuration name="CalcolatriceAvanzataPropertyTestStatistiche.testElevaPotenzaEsponenteMinore" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -160,7 +147,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;homework2.CalcolatriceAvanzataPropertyTestStatistiche&quot;" />
+            <option value="&quot;homework2.CalcolatriceAvanzataPropertyTestStatistiche.testElevaPotenzaEsponenteMinore&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -171,7 +158,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="CalcolatriceAvanzataPropertyTestStatistiche.testDividiDenominatoreDiversoDaZero" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="CalcolatriceAvanzataPropertyTestStatistiche.testElevaPotenzaIntero" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -184,7 +171,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;homework2.CalcolatriceAvanzataPropertyTestStatistiche.testDividiDenominatoreDiversoDaZero&quot;" />
+            <option value="&quot;homework2.CalcolatriceAvanzataPropertyTestStatistiche.testElevaPotenzaIntero&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -195,7 +182,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="CalcolatriceAvanzataPropertyTestStatistiche.testDividiDenominatoreUgualeAZero" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="CalcolatriceAvanzataTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -208,7 +195,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;homework2.CalcolatriceAvanzataPropertyTestStatistiche.testDividiDenominatoreUgualeAZero&quot;" />
+            <option value="&quot;homework1.CalcolatriceAvanzataTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -219,7 +206,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="CalcolatriceAvanzataPropertyTestStatistiche.testSomma" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="CalcolatriceAvanzataTestCodiceOriginale" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -232,7 +219,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;homework2.CalcolatriceAvanzataPropertyTestStatistiche.testSomma&quot;" />
+            <option value="&quot;homework1.testDiProvaESuClasseOriginale.CalcolatriceAvanzataTestCodiceOriginale&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -243,7 +230,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="CalcolatriceAvanzataPropertyTest.testElevaPotenzaIntero" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="CalcolatriceAvanzataTestDiProva" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -256,7 +243,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;homework2.CalcolatriceAvanzataPropertyTest.testElevaPotenzaIntero&quot;" />
+            <option value="&quot;homework1.testDiProvaESuClasseOriginale.CalcolatriceAvanzataTestDiProva&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -268,19 +255,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Gradle.CalcolatriceAvanzataPropertyTestStatistiche" />
-      <item itemvalue="Gradle.CalcolatriceAvanzataPropertyTest.testElevaPotenzaIntero" />
-      <item itemvalue="Gradle.CalcolatriceAvanzataPropertyTestStatistiche.testDividiDenominatoreDiversoDaZero" />
-      <item itemvalue="Gradle.CalcolatriceAvanzataPropertyTestStatistiche.testDividiDenominatoreUgualeAZero" />
-      <item itemvalue="Gradle.CalcolatriceAvanzataPropertyTestStatistiche.testSomma" />
+      <item itemvalue="Gradle.CalcolatriceAvanzataPropertyTestStatistiche.testElevaPotenzaEsponenteMinore" />
+      <item itemvalue="Gradle.CalcolatriceAvanzataPropertyTestStatistiche.testElevaPotenzaIntero" />
+      <item itemvalue="Gradle.CalcolatriceAvanzataTest" />
+      <item itemvalue="Gradle.CalcolatriceAvanzataTestCodiceOriginale" />
+      <item itemvalue="Gradle.CalcolatriceAvanzataTestDiProva" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.CalcolatriceAvanzataPropertyTestStatistiche" />
-        <item itemvalue="Gradle.CalcolatriceAvanzataPropertyTestStatistiche.testDividiDenominatoreUgualeAZero" />
-        <item itemvalue="Gradle.CalcolatriceAvanzataPropertyTestStatistiche.testDividiDenominatoreDiversoDaZero" />
-        <item itemvalue="Gradle.CalcolatriceAvanzataPropertyTestStatistiche.testSomma" />
-        <item itemvalue="Gradle.CalcolatriceAvanzataPropertyTest.testElevaPotenzaIntero" />
+        <item itemvalue="Gradle.CalcolatriceAvanzataTest" />
+        <item itemvalue="Gradle.CalcolatriceAvanzataTestCodiceOriginale" />
+        <item itemvalue="Gradle.CalcolatriceAvanzataTestDiProva" />
+        <item itemvalue="Gradle.CalcolatriceAvanzataPropertyTestStatistiche.testElevaPotenzaEsponenteMinore" />
+        <item itemvalue="Gradle.CalcolatriceAvanzataPropertyTestStatistiche.testElevaPotenzaIntero" />
       </list>
     </recent_temporary>
   </component>
@@ -308,7 +295,7 @@
       <workItem from="1705689454339" duration="3483000" />
       <workItem from="1705748790638" duration="7029000" />
       <workItem from="1705837177972" duration="17327000" />
-      <workItem from="1705913790536" duration="12230000" />
+      <workItem from="1705913790536" duration="17225000" />
     </task>
     <task id="LOCAL-00001" summary="Prima commit">
       <option name="closed" value="true" />
@@ -342,7 +329,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705837435156</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Ho modificato alcune cose delle statistiche e ho aggiunto i test per la code coverage">
+      <option name="closed" value="true" />
+      <created>1705938944576</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1705938944576</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -354,12 +349,11 @@
     <MESSAGE value="Property based test" />
     <MESSAGE value="Property based test finiti" />
     <MESSAGE value="Inserimento CalcolatriceAvanzataOriginale sulla quale fare i test e inserimento della classe per i test di prova da inserire nel punto 2 dei sette step." />
-    <option name="LAST_COMMIT_MESSAGE" value="Inserimento CalcolatriceAvanzataOriginale sulla quale fare i test e inserimento della classe per i test di prova da inserire nel punto 2 dei sette step." />
+    <MESSAGE value="Ho modificato alcune cose delle statistiche e ho aggiunto i test per la code coverage" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ho modificato alcune cose delle statistiche e ho aggiunto i test per la code coverage" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/calcolatrice_avanzata$CalcolatriceAvanzataTest.ic" NAME="CalcolatriceAvanzataTest Coverage Results" MODIFIED="1705923358445" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="true">
-      <FILTER>caso_di_studio_test.CalcolatriceAvanzata</FILTER>
-    </SUITE>
     <SUITE FILE_PATH="coverage/calcolatrice_avanzata$CalcolatriceAvanzataPropertyTest.ic" NAME="CalcolatriceAvanzataPropertyTest Coverage Results" MODIFIED="1705923978269" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/calcolatrice_avanzata$CalcolatriceAvanzataTest.ic" NAME="CalcolatriceAvanzataTest Coverage Results" MODIFIED="1705945878118" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
