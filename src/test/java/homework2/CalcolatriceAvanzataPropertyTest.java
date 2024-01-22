@@ -11,14 +11,17 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 
 public class CalcolatriceAvanzataPropertyTest {
     @Property
+    @Report(Reporting.GENERATED)
     void testSomma(@ForAll double a, @ForAll double b) {
         assertEquals(a + b, CalcolatriceAvanzata.somma(a, b));
     }
     @Property
+    @Report(Reporting.GENERATED)
     void testSottrai(@ForAll double a, @ForAll double b) {
         assertEquals(a - b, CalcolatriceAvanzata.sottrai(a, b));
     }
     @Property
+    @Report(Reporting.GENERATED)
     void testMoltiplica(@ForAll double a, @ForAll double b) {
         assertEquals(a * b, CalcolatriceAvanzata.moltiplica(a, b));
     }
@@ -73,15 +76,13 @@ public class CalcolatriceAvanzataPropertyTest {
     }
     @Property
     @Report(Reporting.GENERATED)
-    void testElevaPotenzaIntero(@ForAll("numeriMinoriDiZero") double base, @ForAll("esponenteDouble") double esponente) {
+    void testElevaPotenzaIntero(@ForAll("numeriMinoriDiZero") double base, @ForAll("esponenteIntero") double esponente) {
         assertEquals(Math.pow(base, esponente), CalcolatriceAvanzata.elevaPotenza(base, esponente));
     }
     @Provide
-    Arbitrary<Double> esponenteDouble() {
+    Arbitrary<Double> esponenteIntero() {
         return Arbitraries.doubles().filter(e -> e == e.intValue());
     }
-
-
     @Property
     @Report(Reporting.GENERATED)
     void testElevaPotenzaDecimale(@ForAll("numeriMinoriDiZero") double base, @ForAll("esponenteDoubleDiversoDaZero") double esponente) {
@@ -109,6 +110,7 @@ public class CalcolatriceAvanzataPropertyTest {
     Arbitrary<Double> numeroMinoreOUgualeAZero() {
         return Arbitraries.doubles().lessOrEqual(0);
     }
+
     @Property
     @Report(Reporting.GENERATED)
     void testCalcolaRadiciEquazioneQuadratica(@ForAll("numeriDiversiDaZero") double a, @ForAll double b, @ForAll double c) {

@@ -67,17 +67,17 @@ public class CalcolatriceAvanzataTest {
     @Test
     void testElevaPotenzaWithException() {
         assertThrows(IllegalArgumentException.class, ()->{
+            elevaPotenza(0, 0);
+        }); //T11
+        assertThrows(IllegalArgumentException.class, ()->{
             elevaPotenza(0, -2);
         }); //T12
         assertThrows(IllegalArgumentException.class, ()->{
-            elevaPotenza(0, 0);
+            elevaPotenza(0, -0.5);
         }); //T13
         assertThrows(IllegalArgumentException.class, ()->{
-            elevaPotenza(0, -0.5);
-        }); //T14
-        assertThrows(IllegalArgumentException.class, ()->{
             elevaPotenza(-3, 1.8);
-        });
+        }); //T14
     }
 
     @ParameterizedTest
@@ -93,7 +93,13 @@ public class CalcolatriceAvanzataTest {
         }); //T6
         assertThrows(IllegalArgumentException.class, ()->{
             calcolaRadiciEquazioneQuadratica(0, 0, 0);
-        }); //T7
+        }); //T7 e T1 code coverage
+        assertThrows(IllegalArgumentException.class, ()->{
+           calcolaRadiciEquazioneQuadratica(0, 0, -2.3);
+        }); //T2 code coverage
+        assertThrows(IllegalArgumentException.class, ()->{
+           calcolaRadiciEquazioneQuadratica(0, 6.3, 0);
+        }); //T3 code coverage
     }
 
     public static Stream<Arguments> generatorSomma() {
@@ -135,17 +141,15 @@ public class CalcolatriceAvanzataTest {
     public static Stream<Arguments> generatorPotenza() {
         return Stream.of(
                 of(2.5, 3, 15.625), //T1
-                of(-2.5, 3, -15.625), //T2
-                of(-2.5, 2, 6.25), //T3
-                of(-3.6, 0, 1), //T4
-                of(4, -2, 0.0625), //T5
+                of(6, 0.5, 2.449489742783178), //T2
+                of(4, -2, 0.0625), //T3
+                of(-2.5, 2, 6.25), //T4
+                of(-2.5, 3, -15.625), //T5
                 of(-4, -2, 0.0625), //T6
                 of(-4, -3, -0.015625), //T7
-                of(6, 0.5, 2.449489742783178), //T8
-                //test che non possiamo fare perché non supportato dal metodo pow della libreria math
-                //of(-3, 1.8, 7.2246740558420761388565258425735), //T9
-                of(0, 5, 0), //T10
-                of(0, 0.6, 0) //T11
+                of(-3.6, 0, 1), //T8
+                of(0, 5, 0), //T9
+                of(0, 0.6, 0) //T10
         );
     }
 
@@ -155,7 +159,8 @@ public class CalcolatriceAvanzataTest {
                 of(-2, -6, -4, new ArrayList<>() {{add(-2.0); add(-1.0);}}), //T2
                 of(1, 0, -121, new ArrayList<>() {{add(11.0); add(-11.0);}}), //T3
                 of(5, 20, 0, new ArrayList<>() {{add(0.0); add(-4.0);}}), //T4
-                of(1, -3, 10, new ArrayList<>()) //T5
+                of(1, -3, 10, new ArrayList<>()), //T5
+                of(-4.2, 0, 0, new ArrayList<>() {{add(0.0);}}) //T5 code coverage
         );
     }
 }

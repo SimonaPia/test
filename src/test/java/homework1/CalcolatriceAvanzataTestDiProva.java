@@ -2,8 +2,10 @@ package homework1;
 
 import org.junit.jupiter.api.Test;
 
+import java.util.ArrayList;
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static caso_di_studio_test.CalcolatriceAvanzataOriginale.*;
+import static codice_originale.CalcolatriceAvanzataOriginale.*;
 
 public class CalcolatriceAvanzataTestDiProva {
     @Test
@@ -49,5 +51,20 @@ public class CalcolatriceAvanzataTestDiProva {
     @Test
     void testElevaPotenza3() {
         assertEquals(elevaPotenza(2.3, 3), 12.166999999999998);
+    }
+
+    @Test
+    void testCalcoloRadiciEquazioneQuadratica1() {
+        assertEquals(calcolaRadiciEquazioneQuadratica(10, 3, -4), new ArrayList<>(){{add(0.5); add(-0.8);}});
+    }
+
+    @Test
+    void testCalcoloRadiciEquazioneQuadratica2() {
+        assertEquals(calcolaRadiciEquazioneQuadratica(-4, 10, -4), new ArrayList<>(){{add(0.5); add(2.0);}});
+    }
+
+    @Test
+    void testCalcoloRadiciEquazioneQuadratica3() {
+        assertEquals(calcolaRadiciEquazioneQuadratica(-2, 5, -4), new ArrayList<>());
     }
 }

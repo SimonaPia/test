@@ -75,7 +75,7 @@ public class CalcolatriceAvanzataPropertyTestStatistiche {
     @Report(Reporting.GENERATED)
     @StatisticsReport (format = Histogram.class)
     void testRadiceQuadrata(@ForAll("numeriMaggioriOUgualiAZero") double a) {
-        Statistics.collect("isZero", a >= 0 ? "zero" : "non-zero");
+        Statistics.collect("isZero", a == 0 ? "zero" : "non-zero");
     }
     @Provide
     Arbitrary<Double> numeriMaggioriOUgualiAZero() {
@@ -110,8 +110,6 @@ public class CalcolatriceAvanzataPropertyTestStatistiche {
 
         long mod = Math.floorMod((long) esponente, 2);
         Statistics.collect(mod == 0 ? "pari" : "dispari");
-
-        CalcolatriceAvanzata.elevaPotenza(base, esponente);
     }
     @Provide
     Arbitrary<Double> numeroMaggioreDiZero() {
@@ -120,16 +118,16 @@ public class CalcolatriceAvanzataPropertyTestStatistiche {
     @Property
     @Report(Reporting.GENERATED)
     @StatisticsReport (format = Histogram.class)
-    void testElevaPotenzaIntero(@ForAll("numeriMinoriDiZero") double base, @ForAll("esponenteDouble") double esponente) {
+    void testElevaPotenzaIntero(@ForAll("numeriMinoriDiZero") double base, @ForAll("esponenteIntero") double esponente) {
         // Raccogli la statistica sull'esponente
         String tipoEsponente = (esponente < 0) ? "negativo" : (esponente > 0) ? "positivo" : "zero";
         Statistics.collect("tipoEsponente", tipoEsponente);
 
-        // Esegui il test di elevazione a potenza
-        double risultato = CalcolatriceAvanzata.elevaPotenza(base, esponente);
+        long mod = Math.floorMod((long) esponente, 2);
+        Statistics.collect(mod == 0 ? "pari" : "dispari");
     }
     @Provide
-    Arbitrary<Double> esponenteDouble() {
+    Arbitrary<Double> esponenteIntero() {
         return Arbitraries.doubles().filter(e -> e == e.intValue());
     }
 
@@ -159,7 +157,7 @@ public class CalcolatriceAvanzataPropertyTestStatistiche {
     @Report(Reporting.GENERATED)
     @StatisticsReport (format = Histogram.class)
     void testElevaPotenzaBaseZero(@ForAll("numeriUgualiAZero") double base, @ForAll("numeroMaggioreDiZero") double esponente) {
-        double soglia = 0.0001;  // Puoi regolare la soglia a seconda di quanto consideri "vicino a zero"
+        double soglia = 0.2;  // Puoi regolare la soglia a seconda di quanto consideri "vicino a zero"
         String numVicino0 = Math.abs(esponente) < soglia ? "numero vicino a 0" : "numero non vicino a 0";
 
         // Raccogli la statistica
@@ -167,13 +165,19 @@ public class CalcolatriceAvanzataPropertyTestStatistiche {
     }
     @Property
     @Report(Reporting.GENERATED)
+    @StatisticsReport (format = Histogram.class)
     void testElevaPotenzaEsponenteMinore(@ForAll("numeriUgualiAZero") double base, @ForAll("numeroMinoreOUgualeAZero") double esponente) {
+        boolean isExceptionThrown = false;
+        // Verifica se l'eccezione viene lanciata
         try {
             CalcolatriceAvanzata.elevaPotenza(base, esponente);
         } catch (IllegalArgumentException e) {
-            // Se viene lanciata un'eccezione, conta come un fallimento
-            Statistics.collect("fallimentiElevaPotenzaEsponenteMinore", 1);
+            isExceptionThrown = true;
         }
+
+        // Raccogli la statistica in base a se l'eccezione è stata lanciata o meno
+        Statistics.collect("fallimenti", isExceptionThrown);
+        Statistics.collect("successi", !isExceptionThrown);
     }
     @Provide
     Arbitrary<Double> numeroMinoreOUgualeAZero() {

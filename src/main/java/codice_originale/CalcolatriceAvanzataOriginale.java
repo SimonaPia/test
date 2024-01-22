@@ -1,4 +1,4 @@
-package caso_di_studio_test;
+package codice_originale;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -35,7 +35,7 @@ public class CalcolatriceAvanzataOriginale {
         return Math.pow(base, esponente);
     }
 
-    public List<Double> calcolaRadiciEquazioneQuadratica(double a, double b, double c) {
+    public static List<Double> calcolaRadiciEquazioneQuadratica(double a, double b, double c) {
         List<Double> radici = new ArrayList<>();
         double discriminante = b * b - 4 * a * c;
 

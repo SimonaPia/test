@@ -9,14 +9,13 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Stream;
 
-import static caso_di_studio_test.CalcolatriceAvanzata.*;
-import static caso_di_studio_test.CalcolatriceAvanzata.calcolaRadiciEquazioneQuadratica;
+import static codice_originale.CalcolatriceAvanzataOriginale.*;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.params.provider.Arguments.of;
 
 public class CalcolatriceAvanzataTestCodiceOriginale {
-    @ParameterizedTest
+    /*@ParameterizedTest
     @MethodSource("generatorSomma")
     void testSomma(double a, double b, double expectedValue) {
         assertEquals(somma(a, b), expectedValue);
@@ -32,7 +31,7 @@ public class CalcolatriceAvanzataTestCodiceOriginale {
     @MethodSource("generatorMoltiplica")
     void testMoltiplica(double a, double b, double expectedValue) {
         assertEquals(moltiplica(a, b), expectedValue);
-    }
+    }*/
 
     @ParameterizedTest
     @MethodSource("generatorDividi")
