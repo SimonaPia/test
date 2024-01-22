@@ -9,10 +9,8 @@ import net.jqwik.api.statistics.StatisticsReport;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.logging.Logger;
 
-import static org.assertj.core.api.Assumptions.assumeThat;
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 public class CalcolatriceAvanzataPropertyTestStatistiche {
 
@@ -56,8 +54,17 @@ public class CalcolatriceAvanzataPropertyTestStatistiche {
     @Report(Reporting.GENERATED)
     @StatisticsReport(format = Histogram.class)
     void testDividiDenominatoreUgualeAZero(@ForAll double a, @ForAll("numeriUgualiAZero") double b) {
-        String risultato = (b == 0) ? "fallimento" : "successo";
-        Statistics.collect("risultato", risultato);
+        boolean isExceptionThrown = false;
+        // Verifica se l'eccezione viene lanciata
+        try {
+            CalcolatriceAvanzata.dividi(a,b);
+        } catch (IllegalArgumentException e) {
+            isExceptionThrown = true;
+        }
+
+        // Raccogli la statistica in base a se l'eccezione è stata lanciata o meno
+        Statistics.collect("fallimenti", isExceptionThrown);
+        Statistics.collect("successi", !isExceptionThrown);
     }
 
     @Provide
@@ -78,7 +85,17 @@ public class CalcolatriceAvanzataPropertyTestStatistiche {
     @Report(Reporting.GENERATED)
     @StatisticsReport (format = Histogram.class)
     void testRadiceQuadrataMinoreDiZero(@ForAll("numeriMinoriDiZero") double a) {
-        Statistics.collect("isZeroOrNegative", "non-zero");
+        boolean isExceptionThrown = false;
+        // Verifica se l'eccezione viene lanciata
+        try {
+            CalcolatriceAvanzata.radiceQuadrata(a);
+        } catch (IllegalArgumentException e) {
+            isExceptionThrown = true;
+        }
+
+        // Raccogli la statistica in base a se l'eccezione è stata lanciata o meno
+        Statistics.collect("fallimenti", isExceptionThrown);
+        Statistics.collect("successi", !isExceptionThrown);
     }
     @Provide
     Arbitrary<Double> numeriMinoriDiZero() {
